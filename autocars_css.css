@@ -1,0 +1,27 @@
+body{
+    background-color: darksalmon;
+
+}
+
+h1{
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+
+p{
+    align-items: center;
+    color: black;
+}
+
+button{
+    background-color: orangered;
+    border-color: orangered;
+    color: black;
+
+}
+
+h3{
+    font-weight: bold;
+    color: black;
+}
