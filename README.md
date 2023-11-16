@@ -1,1 +1,1 @@
-# Autuset.github.io
+# Autoset.github.io
