@@ -14,24 +14,33 @@
     <style>
       /* Image container styles */
       .image-container {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          margin-top: 20px;
-      }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
 
-      /* Individual image styles */
-      .image-container img {
-          max-width: 45%;
-          height: auto;
-          display: block;
-      }
+        /* Individual image and caption styles */
+        .image-and-caption {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 45%;
+        }
 
-      /* Caption styles */
-      .image-container p {
-          text-align: center;
-          margin-top: 10px;
-      }
+        .image-and-caption img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Caption styles */
+        .image-and-caption p {
+            margin: 0;
+        }
   </style>
 </head>
 <body>
@@ -67,16 +76,17 @@
   </div>
 </nav>
 
-<div class="image-container">
-  <div class="image-and-caption">
-      <img src="muscat.jpg" alt="Our Location in Muscat">
-      <p>Our Location in Muscat</p>
-  </div>
-  <div class="image-and-caption">
-      <img src="dubai.jpg" alt="Our Location in Dubai">
-      <p>Our Location in Dubai</p>
-  </div>
-</div>
+
+    <div class="image-container">
+        <div class="image-and-caption">
+            <p>Our Location in Muscat</p>
+            <img src="muscat.jpg" alt="Our Location in Muscat">
+        </div>
+        <div class="image-and-caption">
+            <p>Our Location in Dubai</p>
+            <img src="dubai.jpg" alt="Our Location in Dubai">
+        </div>
+    </div>
 
 
 </body>
