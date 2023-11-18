@@ -11,16 +11,27 @@
     <!-- Add your custom CSS file if needed -->
     <link rel="stylesheet" href="styles.css">
 
-        <style>
-    .image-container {
-      display: flex;
-    }
+    <style>
+      /* Image container styles */
+      .image-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-top: 20px;
+      }
 
-    .image-container img {
-      width: 450px; 
-      height: 480px; 
-      margin-right: 10px; 
-    }
+      /* Individual image styles */
+      .image-container img {
+          max-width: 45%;
+          height: auto;
+          display: block;
+      }
+
+      /* Caption styles */
+      .image-container p {
+          text-align: center;
+          margin-top: 10px;
+      }
   </style>
 </head>
 <body>
@@ -56,14 +67,15 @@
   </div>
 </nav>
 
-  <div class="container mt-5">
-    <!-- Content specific to the page -->
-  </div>
-
-
 <div class="image-container">
-  <img src="muscat.jpg" alt="Our Location in Muscat">
-  <img src="dubai.jpg" alt="Our Location in Dubai">
+  <div class="image-and-caption">
+      <img src="muscat.jpg" alt="Our Location in Muscat">
+      <p>Our Location in Muscat</p>
+  </div>
+  <div class="image-and-caption">
+      <img src="dubai.jpg" alt="Our Location in Dubai">
+      <p>Our Location in Dubai</p>
+  </div>
 </div>
 
 
