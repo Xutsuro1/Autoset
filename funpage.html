@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="funpage.css" />
-    <title>Task 5</title>
-    <script src="funpage.js" defer></script>
+    <link rel="stylesheet" href="cars12.css" />
+    <title>Funpage</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
         <a class="logo" href="#">JSGames</a>
+        <div class="burger__menu"></div>
         <div class="menu__btns">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="cars.html">Fleet</a>
@@ -132,7 +132,6 @@
           transmission.style.left = '40px';
         }, 5000);
       }
-
       function moveRoad() {
         statusCountRock.innerHTML = countRock;
         roadX = parseInt(getComputedStyle(road).left);

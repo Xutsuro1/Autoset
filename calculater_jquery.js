@@ -4,9 +4,12 @@ function calculateTotal() {
     var isSeniorCustomer = $("#seniorCustomer").prop("checked");
   
     var baseCosts = {
-      compact: 30,
+      Luxury: 90,
       sedan: 50,
-      suv: 70
+      suv: 70,
+      Off_Roads: 80,
+      sports: 100,
+      Economic: 30
     };
   
     var totalCost = baseCosts[carType] * rentalDays;

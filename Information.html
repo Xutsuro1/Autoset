@@ -35,14 +35,14 @@
                     <a class="nav-link" href="services.html">Locations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="About.html">About Us</a>
+                    <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Get In Touch</a></li>
                   <li class="nav-item">
                       <a class="nav-link" href="calculater.html">Calculater</a></li>
                       <li class="nav-item">
-                        <a class="nav-link" href="Information.html">Car Information</a></li>
+                        <a class="nav-link active" href="Information.html">Car Information</a></li>
                         <li class="nav-item">
                           <a class="nav-link" href="questionnaire.html">Questionnaire</a></li>
                           <li class="nav-item">
@@ -58,7 +58,7 @@
 
     <!-- Rent Now button -->
     <div class="rent-now">
-        <button type="button" class="btn btn-primary btn-lg">Rent Now</button>
+        <button type="button" class="btn btn-primary btn-lg" id="clc">Rent Now</button>
     </div>
 
     <!-- Add more content as needed -->
@@ -119,19 +119,12 @@
             <button type="button" onclick="searchInformation()">Search</button>
         </form>
     </div>
-    <footer class="footer">
-        <table cellspacing="50">
-          <tr >
-              <td ><input  style="color: black; background-color: orangered;" type="button" value="Privacy Statment"></button></td>
-              <td><input  style="color: black; background-color: orangered;" type="button"  value="Help"></button></td>
-              <td><input  style="color: black; background-color: orangered;" type="button"  value="How we Work"></button></td>
-          
-              <td><input  style="color: black; background-color: orangered;" type="button" value="Locations"></button></td>
-              <td><input  style="color: black; background-color: orangered;" type="button" value="Our cars"></button></td>
-              <td><input  style="color: black; background-color: orangered;" type="button" value="Contact us"></button></td>
-          </tr>
-      </table>
-  </footer>
-
+  
+  <script>
+    document.getElementById('clc').addEventListener('click', function() {
+      // Redirect to calculater.html
+      window.location.href = 'calculater.html';
+    });
+  </script>
 </body>
 </html>

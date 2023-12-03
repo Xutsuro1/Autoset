@@ -16,12 +16,20 @@ function Car(carModel, carType, carYear) {
 var carTypesArray = [
     new CarType("Sedan", "Comfortable seating", 50),
     new CarType("SUV", "Spacious", 70),
+    new CarType("Luxury", "Advanced Featsures", 90),
+    new CarType("OFF_ROAs", "Suitable for trips and hard roads", 80),
+    new CarType("Economic", "cheap and used daily", 30),
+    new CarType("Sports", "Powerful engine with aggressive looking", 90),
     // Add more car types as needed
 ];
 
 var availableCarsArray = [
-    new Car("Toyota Camry", "Sedan", 2022),
-    new Car("Ford Explorer", "SUV", 2021),
+    new Car("Toyota Camry", "Economic", 2022),
+    new Car("Lexus RX350", "SUV", 2020),
+    new Car("Mercedes Benz S550", "Luxury", 2018),
+    new Car("Honda Accord", "Sedan", 2017),
+    new Car("GMC Sierra ", "OFF_ROADS", 2015),
+    new Car("Lamborghini Huracan", "Sports", 2016),
     // Add more available cars as needed
 ];
 

@@ -12,6 +12,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
+  .banner {
+      background-color: #c7c7c7; /* Set the background color */
+      color: #000000; /* Set the text color */
+      
+      text-align: center; /* Center-align text */
+      font-size: 18px; /* Set the font size */
+      font-weight: bold; /* Set font weight to bold */
+      position: relative;
+      
+      animation: moveLeft 16s linear infinite; /* Set the animation properties */
+    }
+    
+    @keyframes moveLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
   a:link {color: green;}
   a:visited {color: blue;}
   a:hover {color: red;}
@@ -58,7 +78,7 @@
           <a class="nav-link" href="services.html">Locations</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="About.html">About Us</a>
+          <a class="nav-link" href="about.html">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Get In Touch</a></li>
@@ -79,6 +99,10 @@
       </ul>
     </div>
   </nav>
+
+  <div class="banner" id="bannerText">
+    Welcome to the AutoCars website! Today is <span id="datetime" ></span>
+  </div>
   
 
   <div class="container mt-5">
@@ -117,6 +141,23 @@
   style="align-content: center; background-image:url(off-road.webp); padding: 170px; background-position: center;background-repeat: no-repeat;">
 </div>
 <script>
+
+
+  // Function to update current date and time
+  function updateDateTime() {
+        // create a new Date object
+        const now = new Date();
+
+        
+        const currentDateTime = now.toLocaleString();
+
+        
+        document.querySelector('#datetime').textContent = currentDateTime;
+      }
+
+      
+      setInterval(updateDateTime, 1000);
+
 
   document.addEventListener("DOMContentLoaded", function () {
       var imageContainer = document.querySelector(".img-container1");
