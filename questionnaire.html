@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Questionnaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add your custom CSS file if needed -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="questionnaire.css">
+    <script src="questionnaire.js" defer></script>
+</head>
+<body style="background-color: darksalmon;">
+    <div class="img-container" style="align-content: center; background-image:url(lo.jpg); padding: 170px; background-position: center;background-repeat: no-repeat;">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Auto Cars</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cars.html">Fleet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Get In Touch</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="calculater.html">Calculater</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Information.html">Car Information</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="questionnaire.html">Questionnaire</a></li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="funpage.html">Funpage</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <h1>Customer Questionnaire</h1>
+        <form id="questionnaireForm" onsubmit="validateForm(event)">
+            <!-- Textbox -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <!-- Radio Buttons -->
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+
+            <!-- Checkbox -->
+            <label>Interests:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                <label><input type="checkbox" name="interests" value="music"> Music</label>
+                <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+            </div>
+
+            <!-- Textarea -->
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <!-- Additional Control (e.g., Select) -->
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+      
+    
+    
+    
+        <footer class="footer">
+          <table cellspacing="50">
+            <tr >
+                <td ><input  style="color: black; background-color: orangered;" type="button" value="Privacy Statment"></button></td>
+                <td><input  style="color: black; background-color: orangered;" type="button"  value="Help"></button></td>
+                <td><input  style="color: black; background-color: orangered;" type="button"  value="How we Work"></button></td>
+            
+                <td><input  style="color: black; background-color: orangered;" type="button" value="Locations"></button></td>
+                <td><input  style="color: black; background-color: orangered;" type="button" value="Our cars"></button></td>
+                <td><input  style="color: black; background-color: orangered;" type="button" value="Contact us"></button></td>
+            </tr>
+        </table>
+    </footer>
+    
+    
+    </body>
+    </html>

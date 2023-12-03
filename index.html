@@ -11,6 +11,30 @@
     <!-- Add your custom CSS file if needed -->
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+  a:link {color: green;}
+  a:visited {color: blue;}
+  a:hover {color: red;}
+  a:active {color: yellow;}
+
+  .img-container {
+      align-content: center;
+      padding: 170px;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-image 1s ease-in-out;
+  }
+  .img-container1 {
+      align-content: center;
+      width: auto;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-image 1s ease-in-out;
+  }
+</style>
+
+
 <body>
     
     <div class="img-container" 
@@ -37,7 +61,16 @@
           <a class="nav-link" href="About.html">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Get In Touch</a>
+          <a class="nav-link" href="contact.html">Get In Touch</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="calculater.html">Calculater</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="Information.html">Car Information</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="questionnaire.html">Questionnaire</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="funpage.html">Funpage</a></li>
+                
       </ul>
     </div>
   </nav>
@@ -75,7 +108,25 @@
       </div>
   </div>
 </div>
+<div class="img-container1"
+  style="align-content: center; background-image:url(off-road.webp); padding: 170px; background-position: center;background-repeat: no-repeat;">
+</div>
+<script>
 
+  document.addEventListener("DOMContentLoaded", function () {
+      var imageContainer = document.querySelector(".img-container1");
+      var images = ["back.jpg", "sport.jpg", "pop.webp"];
+      var currentIndex = 0;
+
+      function changeBackgroundImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          var imageUrl = images[currentIndex];
+          imageContainer.style.backgroundImage = "url(" + imageUrl + ")";
+      }
+
+      setInterval(changeBackgroundImage, 5000); // Change image every 5 seconds (adjust as needed)
+  });
+</script>
 
 
     <footer class="footer">

@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.car-image {
+    width: 150px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    object-fit: cover;
+    border: thick;
+}
+
+/* Custom background colors for table cells */
+.car-type {
+    background-image: brown; /* Adjust as needed */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Adjustments for table layout */
+.car-table {
+    width: 100%;
+}
+
+.car-table td {
+    width: 33%; /* Equal width for each column */
+}
+/* Rent Now button style */
+.rent-now {
+      text-align: center;
+      margin-top: 30px;
+  }
