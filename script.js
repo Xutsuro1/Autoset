@@ -79,15 +79,31 @@ function addCar() {
     displayAvailableCars();
 }
 
-// Function to search for information
-function searchInformation() {
+ function searchInformation() {
     var searchTerm = document.getElementById("searchTerm").value;
+    var searchResultsDiv = document.getElementById("searchResults");
 
-    // Implement your search logic here based on the searchTerm
-    // Display the search results as needed
-    // Initial display of information
-displayCarTypes();
-displayAvailableCars();
+    // Filter available cars based on the search term
+    var matchedResults = availableCarsArray.filter(function(car) {
+        return car.carModel.toLowerCase().includes(searchTerm.toLowerCase());
+    });
+
+    // Display the search results
+    if (matchedResults.length > 0) {
+        var resultsHTML = "<h3>Search Results:</h3><ul>";
+        matchedResults.forEach(function(result) {
+            resultsHTML += "<li>" + result.carModel + " - " + result.carType + " - " + result.carYear + "</li>";
+        });
+        resultsHTML += "</ul>";
+        searchResultsDiv.innerHTML = resultsHTML;
+    } else {
+        searchResultsDiv.innerHTML = "<p>No results found.</p>";
+    }
+
+    // Reset the search term input field after searching
+    document.getElementById("searchTerm").value = "";
 }
 
+displayCarTypes();
+displayAvailableCars();
 
