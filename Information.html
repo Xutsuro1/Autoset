@@ -112,15 +112,17 @@
             <button type="button" onclick="addCar()">Add Car</button>
         </form>
 
-        <!-- Form to search for information -->
         <h2>Search for Information</h2>
-        <form id="searchForm">
-            <label for="searchTerm">Search Term:</label>
-            <input type="text" id="searchTerm" required>
+<form id="searchForm">
+    <label for="searchTerm">Search Term:</label>
+    <input type="text" id="searchTerm" required>
+    <button type="button" onclick="searchInformation()">Search</button>
+</form>
 
-            <button type="button" onclick="searchInformation()">Search</button>
-        </form>
-    </div>
+<div id="searchResults">
+    <!-- This is where the search results will be displayed -->
+</div>
+
   
   <script>
     document.getElementById('clc').addEventListener('click', function() {
