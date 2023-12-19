@@ -85,8 +85,9 @@ function searchInformation() {
 
     // Implement your search logic here based on the searchTerm
     // Display the search results as needed
-}
-
-// Initial display of information
+    // Initial display of information
 displayCarTypes();
 displayAvailableCars();
+}
+
+
