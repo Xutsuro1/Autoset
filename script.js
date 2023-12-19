@@ -19,7 +19,7 @@ var carTypesArray = [
     new CarType("Luxury", "Advanced Featsures", 90),
     new CarType("OFF_ROAs", "Suitable for trips and hard roads", 80),
     new CarType("Economic", "cheap and used daily", 30),
-    new CarType("Sports", "Powerful engine with aggressive looking", 90),
+    new CarType("Sports", "Powerful engine with aggressive looking", 100),
     // Add more car types as needed
 ];
 
