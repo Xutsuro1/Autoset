@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch data from the 'contacts' table
-$sql = "SELECT id, name, email, message FROM contacts";
+$sql = "SELECT  name, email, message FROM contacts";
 $result = $conn->query($sql);
 
 ?>
