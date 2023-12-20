@@ -1,25 +1,48 @@
 <?php
+class ContactMessage {
+    public $name;
+    public $email;
+    public $message;
+
+    public function __construct($name, $email, $message) {
+        $this->name = $name;
+        $this->email = $email;
+        $this->message = $message;
+    }
+}
+
+// Initialize an array to store ContactMessage objects
+$contactMessages = [];
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
 
+    // Create ContactMessage object and store it in the array
+    $contactMsg = new ContactMessage($name, $email, $message);
+    $contactMessages[] = $contactMsg;
 
-    
-    $to = "ii3llawiii@gmail.com"; 
-    $subject = "New Contact Form Submission";
-    $email_body = "Name: $name\nEmail: $email\nMessage:\n$message";
-
-    if (mail($to, $subject, $email_body)) {
-        echo "Thank you for your message. We will get in touch soon!";
-    } else {
-        echo "Oops! Something went wrong, please try again later.";
-    }
-
-    // You can perform other actions here like saving data to a database
-} else {
-    // Redirect to the form page if accessed directly without POST data
-    header("Location: contact_form.php"); // Replace with your form page URL
-    exit;
+    // Redirect back to contact page after submission
+    header("Location: contact.html");
+    exit();
 }
+
+// Function to display contact messages in table format
+function displayContactMessages($contactMessages) {
+    echo "<table border='1'>";
+    echo "<tr><th>Name</th><th>Email</th><th>Message</th></tr>";
+    foreach ($contactMessages as $msg) {
+        echo "<tr>";
+        echo "<td>".$msg->name."</td>";
+        echo "<td>".$msg->email."</td>";
+        echo "<td>".$msg->message."</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+}
+
+// Display contact messages 
+displayContactMessages($contactMessages);
 ?>
