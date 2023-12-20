@@ -29,7 +29,7 @@ $result = $conn->query($sql);
         <table border="1">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    
                     <th>Name</th>
                     <th>Email</th>
                     <th>Message</th>
@@ -40,7 +40,7 @@ $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
-                        echo "<td>" . $row["id"] . "</td>";
+                       
                         echo "<td>" . $row["name"] . "</td>";
                         echo "<td>" . $row["email"] . "</td>";
                         echo "<td>" . $row["message"] . "</td>";
