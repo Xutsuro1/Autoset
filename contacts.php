@@ -1,11 +1,10 @@
 <?php
 // Connect to  MySQL database
 $servername = "localhost";
-$username = "your_username";
-$password = "your_password";
-$dbname = "your_database";
+$username = "root";
+$dbname = "car";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, '', $dbname);
 
 // Check connection
 if ($conn->connect_error) {
