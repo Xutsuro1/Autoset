@@ -99,18 +99,24 @@
 
         <!-- Form to add a new car -->
         <h2>Add a New Car</h2>
-        <form id="addCarForm">
+        <form id="addCarForm" action="display_cars.php" method="post">
             <label for="carModel">Car Model:</label>
-            <input type="text" id="carModel" required>
+        <input type="text" id="carModel" name="carModel" required>
 
             <label for="carType">Car Type:</label>
-            <input type="text" id="carType" required>
+        <input type="text" id="carType" name="carType" required>
 
             <label for="carYear">Year:</label>
-            <input type="number" id="carYear" required>
+        <input type="number" id="carYear" name="carYear" required>
 
             <button type="button" onclick="addCar()">Add Car</button>
+                    <button type="submit">Go to PhP form</button>
+
         </form>
+
+
+
+    </form>
 
         <h2>Search for Information</h2>
 <form id="searchForm">
