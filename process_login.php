@@ -21,9 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $user = new User($name, $email, $password, $phone);
 
-    // Here, you can perform operations like storing user data in a database
-    // For example, you might insert this data into a users table in your database
-
     // For demonstration, let's echo the submitted data:
     echo "<h2>Thank you for registering!</h2>";
     echo "<p>Name: $user->name</p>";
